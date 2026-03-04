@@ -76,6 +76,7 @@ article {
 
 .articleimg {
         width: 100%;
+
         background:rgba(183, 57, 178, 0.5);
         border-radius: 20% 20% 5% 5%;
         box-shadow:5px 5px 20px 20px rgba(42, 9, 27, 0.3);
@@ -132,7 +133,32 @@ aside {
 
 
 }
+@media (max-width: 768px){
 
+    article {
+        display: flex;
+        flex-direction: column;   
+        min-height: 100vh;
+        gap: 2rem;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .articleimg {
+        width: 100%;   
+    }
+
+    
+main {
+        align-items: stretch;
+    }
+
+    section,
+    aside {
+        width: 100%;   
+        margin: 0;     
+    }
+}
 /*nav things*/
 a:hover {
     text-decoration: none;
@@ -240,30 +266,4 @@ footer {
     box-shadow:5px 5px 20px 20px rgba(42, 9, 27, 0.4)
 
 
-}
-@media (max-width: 768px){
-
-    article {
-        display: flex;
-        flex-direction: column;   
-        min-height: 100vh;
-        gap: 2rem;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .articleimg {
-        width: 100%;   
-    }
-
-    
-main {
-        align-items: stretch;
-    }
-
-    section,
-    aside {
-        width: 100%;   
-        margin: 0;     
-    }
 }
